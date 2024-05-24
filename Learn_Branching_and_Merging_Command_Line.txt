@@ -1,14 +1,14 @@
-git branch new-branch
+git branch new-branch ==> to create a new branch names new-branch
 
-git branch
+git branch ==> to git the branches names and to know the current branch
 * main
   new-branch
 
 
-git checkout new-branch
+git checkout new-branch ==> to switch into a new branch
 Switched to branch 'new-branch'
 
-git branch
+git branch ==> to git the branches names and to know the current branch
   main
 * new-branch
 
@@ -29,7 +29,7 @@ Date:   Wed May 22 08:59:25 2024 +0300
     Complete test 1 and test 2
 
 
-git checkout main
+git checkout main ==> to switch into a main branch
 Switched to branch 'main'
 Your branch is up to date with 'orgin/main'.
 
@@ -38,3 +38,48 @@ git branch
   new-branch
 
 code test3.txt
+
+
+git checkout main
+
+git merge new-branch ==> to merge the new-branch into the main branch 
+Merge made by the 'ort' strategy.
+ test.txt  | 2 +-
+ test1.txt | 2 +-
+ test2.txt | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+
+git log
+
+commit 663700e0c60b01ed3bc0618d39fc49fddff4dd0b (HEAD -> main)
+Merge: 671eb66 6c90b2b
+Author: M_Waleed <m.elsherbeny100@gmail.com>
+Date:   Fri May 24 10:10:52 2024 +0300
+
+    Merge branch 'new-branch'
+
+commit 671eb66b9fca91f15f4a7b87f3b28362fdd608cd
+Author: M_Waleed <m.elsherbeny100@gmail.com>
+Date:   Fri May 24 10:07:50 2024 +0300
+
+    add test3 in main branch
+
+commit 6c90b2b88b59c05dcf12af48971c032452532dd9 (new-branch)
+Author: M_Waleed <m.elsherbeny100@gmail.com>
+Date:   Fri May 24 09:59:49 2024 +0300
+
+    modify test and test 1 and test 2
+
+commit 1b151fff6bd7b7f505f73a31608a1e6b3c6403b2 (orgin/main)
+Author: M_Waleed <m.elsherbeny100@gmail.com>
+Date:   Wed May 22 08:59:25 2024 +0300
+
+    Complete test 1 and test 2
+
+commit 2a5032d6faf4a12b2addd13df0dbc1625c0c9ab9
+Author: unknown <m.elsherbeny100@gmail.com>
+Date:   Wed May 22 08:44:38 2024 +0300
+
+    Complete Test 1
+

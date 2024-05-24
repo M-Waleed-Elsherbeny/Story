@@ -1,0 +1,40 @@
+git branch new-branch
+
+git branch
+* main
+  new-branch
+
+
+git checkout new-branch
+Switched to branch 'new-branch'
+
+git branch
+  main
+* new-branch
+
+git add test1.txt test2.txt test.txt
+git commit -m "modify test and test 1 and test 2"
+
+git log
+commit 6c90b2b88b59c05dcf12af48971c032452532dd9 (HEAD -> new-branch)
+Author: M_Waleed <m.elsherbeny100@gmail.com>
+Date:   Fri May 24 09:59:49 2024 +0300
+
+    modify test and test 1 and test 2
+
+commit 1b151fff6bd7b7f505f73a31608a1e6b3c6403b2 (orgin/main, main)
+Author: M_Waleed <m.elsherbeny100@gmail.com>
+Date:   Wed May 22 08:59:25 2024 +0300
+
+    Complete test 1 and test 2
+
+
+git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'orgin/main'.
+
+git branch
+* main
+  new-branch
+
+code test3.txt
